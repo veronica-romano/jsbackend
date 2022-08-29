@@ -11,9 +11,7 @@ console.log(numero == numeroString); //conversão implícita
 === comparar valores e tipos */
 
 const numeroString2 = "456";
-
 const numeroString3 = Number("456");
-
 const numeroString4 = Number("456a");
 
 //conversão explícita
@@ -24,3 +22,5 @@ console.log(numero + numeroString2)
 console.log(numero + numeroString3)
 
 console.log(numero + numeroString4)
+
+
