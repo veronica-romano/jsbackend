@@ -12,3 +12,36 @@ Divisão por zero não é um erro no JavaScript. Diferente de outras linguagens 
 &&: Operador “e”, retorna true somente se todas as condições forem válidas;
 != e !==: Operadores “não igual” e “estritamente não igual”, utilizados para comparação, da mesma forma que == e === retornam true ou false.
 
+
+a = []
+b = 20
+c = true 
+d = ''
+
+if (b === 20 && c != false && d == 0) {
+    console.log('Verdade')
+} else {
+    console.log('Falso')
+}// true
+
+if (a == 0) {
+    console.log('Verdade')
+} else {
+    console.log('Falso')
+}//true
+
+if (d) {
+    console.log('Verdade')
+} else {
+    console.log('Falso')
+}//false 
+
+if (b == '20') {
+    console.log('Verdade')
+} else {
+    console.log('Falso')
+}//true
+
+ Uma string vazia no JavaScript é considerada false.
+ O valor de uma lista vazia é zero, e ao comparar com um número, temos 0 == 0 resultando true.
+Quando comparamos 20 do tipo inteiro com '20' do tipo string com o operador == (igual, igual), apenas os valores das variáveis são comparados, resultando no valor true.
