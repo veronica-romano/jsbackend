@@ -29,3 +29,7 @@ if (forma === 'quadrado') {
 
 console.log(area)
     
+let idade = 17;
+var status1 = (idade >= 18) ? "adulto" : "menor de idade";
+
+console.log(`Você é ${status1}`)
