@@ -50,3 +50,5 @@ console.log(arrayVazia.length)
 [ <3 empty items>, 50 ]
 4
 O JavaScript manteve as posições vazias e adicionou o 50 ao final do array. Após a execução, ele passou a ter 4 posições, mas somente um elemento (o número 50). Chamamos este tipo de estrutura de array esparso e é importante lembrar deste comportamento dos arrays em JavaScript enquanto trabalhamos.
+
+parâmetro obrigatória no foreach: Uma função que recebe um elemento. Essa função tem o nome de callback e vai ser executada para cada elemento do array, sendo que pode receber de 1 a 3 argumentos; o elemento, o índice e o array atual, respectivamente.
