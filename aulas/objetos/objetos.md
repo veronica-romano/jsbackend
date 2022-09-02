@@ -97,3 +97,67 @@ O processo de converter estruturas de dados em sequências de bytes ou caractere
 
 ->o spread operator (ou sintaxe de espalhamento) pode ser uma opção para decompor objetos quando precisamos extraí-los de um array e formar um novo array.
 
+Além do nome e do valor, cada propriedade tem também três atributos:
+
+Writable: Define se a propriedade pode ser adicionada a (ou escrita em) um objeto;
+Enumerable: Define se a propriedade é retornada, por exemplo, em um loop for...in ou utilizando Object.keys() / Object.values() / Object.entries(). Ou seja, se a propriedade é enumerável;
+Configurable: Especifica se a propriedade pode ser modificada ou deletada. Ou seja, se é configurável.
+
+O JavaScript utiliza o termo own property (propriedade própria) para se referir às propriedades que pertencem ao objeto (como os exemplos nome, cpf e email) e que não são herdadas do protótipo.
+
+Objetos criados de forma literal (const obj = {a: 1}) utilizam Object.prototype como protótipo; objetos criados com new a partir de um construtor herdam a propriedade prototype de sua função construtora; Objetos criados com Object.create()recebem como prototype o primeiro parâmetro da função - que pode ser null.
+
+ através da propriedade prototype que acessamos o protótipo de um objeto para manipulá-lo, podendo adicionar propriedades e funções. Novos objetos criados herdarão essas características e comportamentos diretos do protótipo.
+
+ function ClientePoupanca(nome, cpf, email, saldo, saldoPoup){
+ Cliente.call(this, nome, cpf, email, saldo)
+ this.saldoPoup = saldoPoup
+}
+ClientePoupanca.prototype.depositarPoup = function(valor){
+ this.saldoPoup += valor
+}
+
+Existe um protótipo associado ao uso de objetos literais no JavaScript para a herança de atributos e funções já definidos. pois quase todo objeto em Javascript tem associado a ele um segundo objeto, seu protótipo, que lhe confere uma série de atributos e funções.
+
+Para tratar a herança com protótipos podemos criar uma cadeia em que um protótipo acessa o outro de um nível superior e assim por diante.
+
+no Javascript o protótipo representa um objeto “modelo” com seus métodos, utilizado como base para a criação de outros objetos;
+Como acessar propriedades de protótipo através de __proto__ e da propriedade prototype;
+Como a herança de protótipo é utilizada para a criação de dados primitivos, arrays e objetos com JavaScript
+
+O this representa o objeto que executa a função. Podemos dizer que a instrução passada para o JavaScript é: “execute a função aqui, utilizando este contexto”.
+
+call()
+Esse método permite que uma função seja chamada com parâmetros e valor de this específicos. 
+function imprimeNomeEmail(tipoCliente){
+ console.log(`${tipoCliente} - nome: ${this.nome}, email: ${this.email}`)
+}
+
+const cliente1 = {
+ nome: "Carlos",
+ email: "c@email.com"
+}
+
+const cliente2 = {
+ nome: "Fred",
+ email: "f@email.com"
+}
+
+imprimeNomeEmail.call(cliente1, "cliente especial")
+// cliente especial - nome: Carlos, email: c@email.com
+
+imprimeNomeEmail.call(cliente2, "cliente estudante")
+// cliente estudante - nome: Fred, email: f@email.com
+
+Como a função está sendo chamada como objeto do método call(), podemos especificar que o contexto de this em cada chamada se refere a um objeto diferente (cliente1 e cliente2), sem a necessidade de adicionar a função em cada um dos objetos.
+
+
+
+apply()
+O método apply() funciona de forma muito semelhante ao call(), porém recebe os argumentos em um array ao invés de separados
+
+
+Utilize o método apply() caso você tenha um array de dados e o call() para passar valores individuais como parâmetro. Lembre-se que o array deve seguir a ordem correta dos parâmetros informado na função.
+
+bind()
+O método bind() “prende” ou “liga” uma função ao contexto de um objeto. 
