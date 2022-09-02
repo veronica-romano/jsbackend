@@ -161,3 +161,7 @@ Utilize o método apply() caso você tenha um array de dados e o call() para pas
 
 bind()
 O método bind() “prende” ou “liga” uma função ao contexto de um objeto. 
+
+No paradigma da orientação a objetos, uma classe define um modelo base usado na criação de objetos na memória do computador, serve como uma planta que descreve os atributos e comportamentos comuns a objetos de um mesmo tipo.
+
+Na construção de uma classe em JavaScript, além da palavra reservada class, devemos também definir uma função construtora (que inicializa as propriedades do objeto) quando ele for criado, para a inicialização das propriedades de objetos no momento da sua instanciação em memória.
