@@ -66,3 +66,34 @@ No JavaScript, objetos são classificados também como um array associativo (map
 Que para manipular objetos literais podemos utilizar os métodos do JavaScript para cada tipo de dado;
 Que os valores em um objeto podem ser tipos primitivos (strings, números, booleanos e null), arrays ou outros objetos;
 Que além das propriedades, também podemos atribuir funções que dão comportamento a um objeto.
+
+Usamos com o spread operator, adicionando a sintaxe de três pontos (reticências) antes do nome de cada objeto literal, com cada objeto separado por vírgula, caso a sintaxe de espalhamento seja usada em objetos que tenham chaves/propriedades com o mesmo nome, o JavaScript vai sobrescrever o valor destas propriedades à medida que encontra novos valores com o mesmo nome de chave.
+
+const mago = {
+ nome: "Gandalf",
+ classe: "mago"
+}
+ const guerreiro = {
+ nome: "Aragorn",
+ classe: "guerreiro"
+}
+
+const ranger = {
+ nome: "Legolas",
+ classe: "ranger"
+}
+
+{ nome: 'Legolas', classe: 'ranger' }
+
+O JavaScript sobrescreveu as chaves com o mesmo nome a cada ocorrência, assim o resultado final foi somente o último objeto declarado dentro do objeto personagens, o uso da sintaxe de espalhamento pode gerar bastante processamento, então deve ser usado com cuidado em caso de loops ou funções recursivas. Exemplos: https://www.youtube.com/watch?v=f8a-qwKC5yk 
+
+O processo de converter estruturas de dados em sequências de bytes ou caracteres. como no caso do JSON, é chamado de serialização (ou marshaling em algumas linguagens como Go.
+
+ O for...in permite iterar sobre as propriedades de um objeto, e neste loop temos a flexibilidade de percorrer o objeto e executar uma série de comparações. Uma delas é usar o typeof e verificar o tipo da propriedade.
+
+ -> para extrair chaves e valores de objetos é possível utilizar métodos de Object;
+
+-> funções como .entries, .key e .value podem ser úteis na hora de trabalhar com objetos;
+
+->o spread operator (ou sintaxe de espalhamento) pode ser uma opção para decompor objetos quando precisamos extraí-los de um array e formar um novo array.
+
