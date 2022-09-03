@@ -1,10 +1,9 @@
 const livros = require ('./livros');
 
-function menorValor(arrlivros, inicial){
-  let barato = inicial;
-  
-  for (let atual = inicial; atual<arrlivros.length; atual++){
-      if (arrlivros[atual].preco < arrlivros[barato].preco) {
+function menorValor(arrprodutos, posinicial){
+  let barato = 0;
+  for (let atual = 0; atual<arrprodutos.length; atual++){
+      if (arrprodutos[atual].preco < arrprodutos[barato].preco) {
         barato = atual  
       } 
     }
