@@ -1,16 +1,15 @@
 const livros = require ('./livros');
 
 function menorValor(arrprodutos, posinicial){
-  let barato = 0;
-  for (let atual = 0; atual<arrprodutos.length; atual++){
+  let barato = posinicial;
+  for (let atual = posinicial; atual<arrprodutos.length; atual++){
       if (arrprodutos[atual].preco < arrprodutos[barato].preco) {
         barato = atual  
       } 
-    }
+   }
     return barato;
 }
 
-console.log(`O livro mais barato é o ${livros[barato].titulo} que custa ${livros[barato].preco} reais`)
 
 let maisCaro = 0;
 for (let atual = 0; atual < livros.length; atual++) {
