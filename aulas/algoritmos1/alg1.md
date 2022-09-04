@@ -38,3 +38,29 @@ elementos	n	2n	n^2	2*n^2	1	n^3
 
 
 Big O Notation é utilizada para expressar a complexidade de um algoritmo, com relação ao tempo e volume de recursos computacionais necessários para executar esse algoritmo, de acordo com o volume de dados de entrada. usamos O para classificar funções (implementações de algoritmos) de acordo com a forma como crescem em complexidade. Exemplos: https://www.bigocheatsheet.com/
+
+
+A solução de um problema pode envolver o uso de mais de um algoritmo no mesmo código. Nesse caso, podemos avaliar a complexidade de cada um deles ao escolher qual utilizar.
+
+Uma função que incrementa o valor de uma variável, por exemplo:
+
+function incrementa(valor) {
+ return ++valor;
+}
+É um algoritmo de crescimento constante.
+
+A análise assintótica pressupõe uma análise de eficiência de algoritmos independente da quantidade de recursos computacionais disponíveis - por exemplo, processamento e memória disponível do computador), serve para comparar e decidir se determinado algoritmo é o mais eficiente para resolver um problema; fatores como velocidade de processamento não são considerados nessa análise pois o que conta é o crescimento da complexidade em si (considerando o aumento na quantidade de dados processados) e não a quantidade de recursos disponíveis em si.
+
+
+Além das formas linear e quadrática, existem outras formas de cálculo de complexidade de um algoritmo, como a constante;
+É fácil “explodir” a capacidade de processamento de um computador com uma quantidade grande de operações, devido à influência da quantidade de dados na curva de complexidade de um algoritmo;
+Devemos levar esse índice de crescimento em conta na hora de definirmos qual algoritmo será utilizado para resolver um problema, especialmente quando envolve grandes quantidades de dados e para isso podemos utilizar a análise assintótica e a notação O grande;
+Existem várias notações e vários algoritmos “prontos”, como o Selection Sort e o Insertion Sort, entre diversos outros, cada um com suas vantagens e desvantagens.
+
+sorting numbers in js:
+https://www.alura.com.br/artigos/ordenacao-de-numeros-no-javascript-nao-funciona
+
+
+Existem algumas formas de se trabalhar com processamento assíncrono (ou seja, Promises) em JavaScript: utilizando o método .then(), as palavras-chave async e await ou o objeto Promise e seus métodos. Aqui, vamos focar no uso de .then(), async/await e no uso do método Promise.all.
+
+Promises têm um método chamado .then(), que recebe uma função callback e retorna um "objeto-promessa". Não é um retorno dos dados, é a promessa do retorno destes dados.
