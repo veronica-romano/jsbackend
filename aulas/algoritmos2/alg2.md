@@ -1,0 +1,7 @@
+Analisando a forma como a função juntaListas() faz a junção dos arrays em um só, é possível concluir que a comparação e ordenação feita pela função só funciona corretamente quando recebe dois arrays já ordenados.  Ambas as listas são percorridas em paralelo e comparadas a partir do índice 0 do array.
+
+Os valores guardados nas variáveis posicaoAtualLista1, posicaoAtualLista2, produtoAtualLista1 e produtoAtualLista2 são, respectivamente: valor numérico referente ao índice atual da primeira lista (recebida pela função via parâmetro); valor numérico referente ao índice atual da segunda lista (recebida pela função via parâmetro); um objeto com as propriedades titulo e preco, referente ao elemento contido no índice atual da primeira lista; um objeto com as propriedades titulo e preco, referente ao elemento contido no índice atual da segunda lista.
+
+ É super importante sempre sabermos qual é o tipo de dado guardado nas variáveis que usamos em nosso código. Aqui, há uma distinção importante entre as variáveis que guardam o número do índice de um array e o dado que está contido nesse índice.
+
+ A função juntaListas(), que percorre cada uma das duas listas informadas por parâmetro, compara os valores de cada uma, posiciona estes valores em uma lista única de acordo com o resultado da comparação e, por fim, retorna a lista unida.
