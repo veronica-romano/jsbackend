@@ -28,3 +28,22 @@ Perguntas para responder ao usar uma lib:
 Como importar métodos da lib para o meu código?
 Quais métodos e/ou palavras-chaves que disponibilizados e quais os usos?
 Quais (e quantos) são os args que devo passar como parâmetro para que os métodos funcionem? Strings? Números? Um array de informações?
+
+.then(), Async e awayt: https://www.alura.com.br/artigos/async-await-no-javascript-o-que-e-e-quando-usar
+
+Além do .then() e do async/await, o JavaScript também tem um método construtor para resolver promessas, o Promise().
+
+Enquanto .then() e async/await são utilizados quando temos que lidar com promessas já existentes - por exemplo, ao executarmos o método fetch() que, por definição, sempre retorna uma promessa, usamos o construtor Promise() para escrever do zero nossas próprias promessas.
+
+promessas podem ser fulfilled (realizada, completa) ou rejected (rejeitada). Se não estão fulfilled nem rejected estão pending (pendentes). Com a finalização do processamento, a promessa passa para o estado de settled (concluída). Se a promessa está settled seu resultado não se altera mais. Ou seja, uma promessa que se concluiu como rejected não muda mais para o estado de fulfilled e vice-versa.
+
+o try...catch possibilita lidar com um erro identificando o trecho em que ele pode ocorrer (try) e captando o erro (catch) para tratá-lo.
+
+Tanto catch quanto finally são opcionais, mas o try deve sempre estar acompanhado de um ou outro. finally não recebe nenhum dado através dos parênteses ( )
+
+Regulkar expressions ou expressões regulares são objetos que mapeiam padrões de texto por meio de uma linguagem própria, com sintaxe e regras específicas.
+Ajuda: https://regex101.com/
+Info e documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
+
+Para trabalhar com as regex utilizamos métodos próprios de string, como match(), search(), replace(), matchAll() e split(). Documetação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String#
+O JavaScript também tem alguns métodos próprios do objeto RegExp: test() e exec(). Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/RegExp
