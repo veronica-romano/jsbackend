@@ -47,3 +47,10 @@ Info e documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/G
 
 Para trabalhar com as regex utilizamos métodos próprios de string, como match(), search(), replace(), matchAll() e split(). Documetação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String#
 O JavaScript também tem alguns métodos próprios do objeto RegExp: test() e exec(). Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+
+libs para validações de formulários:
+Joi: https://joi.dev/
+Yup: https://www.npmjs.com/package/yup
+Yup/testes: https://joi.dev/tester/
+
+curso de regex: https://www.alura.com.br/curso-online-expressoes-regulares
