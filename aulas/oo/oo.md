@@ -40,3 +40,26 @@ const soma = (num1, num2) => num1 + num2;
 
 elas têm seu conteúdo interpretado apenas no momento da execução
 
+
+A sintaxe da função construtora é mais confortável para quem está acostumado com o uso de classes; já a factory function é mais flexível a respeito do tipo de objeto que será retornado.
+
+function User(nome, email) {
+ this.nome = nome
+ this.email = email
+
+ this.exibeInfos() {
+   return `${nome}, ${email}`
+ }
+}
+const newUser = new User('Mariana', 'm@m.com')
+console.log(newUser)
+console.log(newUser.exibeInfos())
+
+A sintaxe de classe não existia no JavaScript até o ES6, e foi implementada como “açúcar sintático” por cima do modelo de protótipo nativo do JavaScript. Isso aconteceu por, entre outros fatores, uma demanda da comunidade dev que já estava acostumada a utilizar classes em orientação a objetos e preferia essa forma a ter que utilizar os protótipos.
+
+A palavra-chave this se refere ao contexto em que uma função está sendo executada; esse contexto só é determinado no momento da chamada da função e só é possível saber qual será o valor de this para uma função se soubermos em que contexto esta função será executada - em outras palavras, a que objeto ela fará referência.
+
+No modelo de protótipo, os objetos “herdam” recursos uns dos outros através da chamada propriedade protótipo. Quando criamos um objeto e definimos seu protótipo através de Object.setPrototypeOf(objetoQueHerda, objetoBase), estabelecemos uma cadeia de protótipos que começa no próprio tipo Object e vai até o último nível de objeto criado através dessa cadeia.
+
+this representa o contexto em que determinada função ou método será executada
+
