@@ -74,3 +74,11 @@ só é possível acessar statusText porque o node-fetch traz esta propriedade no
 
 sobre testes: https://www.alura.com.br/artigos/testes-em-javascript
 https://www.alura.com.br/artigos/testes-com-mocks-e-stubs
+
+A jest permite a criação de testes unitários. Para testar funções, essa lib utiliza uma sintaxe particular para definição do teste, assim como em:
+
+test('somar 5 + 6 = 11', () => {
+  expect(somar(5, 6)).toBe(11);
+});
+
+Para iniciar a utilização de jest é necessária a configuração do arquivo package.json e informar que vamos usar a seção script ,como em "test": "jest".
