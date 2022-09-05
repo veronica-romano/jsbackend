@@ -61,3 +61,13 @@ Módulo path: https://nodejs.org/api/path.html#path_path_join_paths
 path.join() para montar o caminho absoluto do diretório que queremos pesquisar, passando como parâmetro de path.join(__dirname, ‘..’, caminho)
 
 É possível suprimir o valor de uma chave de objeto caso seja exatamente o mesmo termo. Ou seja, { encoding: encoding } (o nome da chave é encoding e estamos passando o valor da variável encoding) pode ser declarada na forma { encoding }. Este é um padrão de sintaxe do JavaScript e o uso deste padrão é encorajado.
+
+
+Na criação de um objeto em JavaScript, podemos usar o operador new como em const objeto = new Object().
+
+No Javascript a utilização do operador new permite que usemos um tipo objeto criado pelo usuário.
+
+Para iterar sobre as propriedades de um objeto, podemos utilizar a função for ... in .
+A forma de iterar sobre as propriedades de um objeto em JavaScript é por meio do for … in como em: for (let info in cliente) { // código }.
+
+só é possível acessar statusText porque o node-fetch traz esta propriedade no objeto de retorno res. Documentação: https://www.npmjs.com/package/node-fetch
