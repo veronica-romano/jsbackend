@@ -71,3 +71,6 @@ Para iterar sobre as propriedades de um objeto, podemos utilizar a função for 
 A forma de iterar sobre as propriedades de um objeto em JavaScript é por meio do for … in como em: for (let info in cliente) { // código }.
 
 só é possível acessar statusText porque o node-fetch traz esta propriedade no objeto de retorno res. Documentação: https://www.npmjs.com/package/node-fetch
+
+sobre testes: https://www.alura.com.br/artigos/testes-em-javascript
+https://www.alura.com.br/artigos/testes-com-mocks-e-stubs
