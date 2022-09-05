@@ -54,3 +54,10 @@ Yup: https://www.npmjs.com/package/yup
 Yup/testes: https://joi.dev/tester/
 
 curso de regex: https://www.alura.com.br/curso-online-expressoes-regulares
+
+No lugar de fs.promises.readfile() vamos trabalhar com fs.promises.readdir() passando dois parâmetros: o caminho absoluto que montamos no item 2 com o módulo path; o segundo parâmetro é um objeto que aceita algumas opções, entre elas o encoding do texto. Não esqueça que estamos trabalhando com promessas, então usamos await antes do método.
+
+Módulo path: https://nodejs.org/api/path.html#path_path_join_paths
+path.join() para montar o caminho absoluto do diretório que queremos pesquisar, passando como parâmetro de path.join(__dirname, ‘..’, caminho)
+
+É possível suprimir o valor de uma chave de objeto caso seja exatamente o mesmo termo. Ou seja, { encoding: encoding } (o nome da chave é encoding e estamos passando o valor da variável encoding) pode ser declarada na forma { encoding }. Este é um padrão de sintaxe do JavaScript e o uso deste padrão é encorajado.
