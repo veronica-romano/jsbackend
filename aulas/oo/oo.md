@@ -63,3 +63,19 @@ No modelo de protótipo, os objetos “herdam” recursos uns dos outros atravé
 
 this representa o contexto em que determinada função ou método será executada
 
+para utilizar a sintaxe ESM com NodeJS é preciso incluir, no arquivo package.json, a propriedade ”type”: “module” e sempre incluir a extensão do arquivo .js nos caminhos de importação
+
+O sistema CJS (CommonJS) foi desenvolvido para funcionar como o sistema de exportação/importação de módulos do NodeJS.
+O ESM (EcmaScript Modules) foi desenvolvido para que o JavaScript tivesse nativamente seu próprio sistema de módulos - estamos falando do JavaScript interpretado nos navegadores.
+O NodeJS implementou o suporte ao ESM a partir da versão 13.
+
+JS strict mode: serve para impedir que alguns comportamentos do JavaScript causem “falhas silenciosas” (transformando em erros que são lançados pelo interpretador) e corrigir alguns outros que podem induzir a bugs potenciais e comportamentos inesperados. Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Strict_mode
+
+Você pode decidir o static mode mas métodos estáticos não podem ser executados a partir de uma instância.Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes/static
+
+A herança de classe é importante para um melhor reaproveitamento de código, uma vez que permite a criação de novas funcionalidades com base em um modelo; além disso, faz com que os objetos e as regras de negócio criadas pelo sistema façam sentido e de fácil abstração.
+
+As classes não são a forma nativa do JavaScript trabalhar com orientação a objetos e foram desenvolvidas sobre o modelo de protótipo.
+
+O constructor() é uma função especial que recebe, via parâmetros, as propriedades que um objeto precisa ter ao ser instanciado a partir de uma classe; também é através do construtor que uma classe herda métodos e propriedades da superclasse através da função super(). Porém, dependendo da necessidade do projeto, uma classe pode não ter um construtor, apenas métodos.
+
