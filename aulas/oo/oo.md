@@ -79,3 +79,4 @@ As classes não são a forma nativa do JavaScript trabalhar com orientação a o
 
 O constructor() é uma função especial que recebe, via parâmetros, as propriedades que um objeto precisa ter ao ser instanciado a partir de uma classe; também é através do construtor que uma classe herda métodos e propriedades da superclasse através da função super(). Porém, dependendo da necessidade do projeto, uma classe pode não ter um construtor, apenas métodos.
 
+Manejando versões do nodeJS: https://www.alura.com.br/artigos/descomplicando-o-trabalho-com-node
