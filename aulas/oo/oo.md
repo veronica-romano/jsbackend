@@ -80,3 +80,12 @@ As classes não são a forma nativa do JavaScript trabalhar com orientação a o
 O constructor() é uma função especial que recebe, via parâmetros, as propriedades que um objeto precisa ter ao ser instanciado a partir de uma classe; também é através do construtor que uma classe herda métodos e propriedades da superclasse através da função super(). Porém, dependendo da necessidade do projeto, uma classe pode não ter um construtor, apenas métodos.
 
 Manejando versões do nodeJS: https://www.alura.com.br/artigos/descomplicando-o-trabalho-com-node
+
+get não aceita nenhum parâmetro e set apenas um parâmetro (referente ao dado que será definido), o que ajuda a garantir que não irão receber parâmetros “inesperados” que podem causar bugs
+
+Polimorfismo é o princípio segundo o qual duas (ou mais) classes que herdam de uma superclasse podem executar métodos vindos dessa superclasse e que têm a mesma assinatura, porém comportamentos diferentes da superclasse da qual herdaram.
+
+O encapsulamento é o conceito de “esconder” propriedades e métodos para que não possam ser acessados por fora da classe, o que pode ser feito com o uso de atributos privados e propriedades assessors.
+
+As classes em JavaScript foram implementadas a partir do modelo de herança de protótipo e podem ser consideradas como uma “abstração” deste conceito para tornar a experiência da programação orientada a objetos mais “palatável” (o que chamamos de “açúcar sintático” (syntatic sugar).
+Funções construtoras têm uma estrutura um pouco diferente das funções comuns (por exemplo, a sintaxe de atribuição de propriedades com =) e servem de modelo para criação de objetos através do operador new.
