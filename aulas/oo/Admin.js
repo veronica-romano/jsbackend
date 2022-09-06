@@ -10,10 +10,9 @@ export default class Admin extends User{
     
 }
 
-/* const novoAdmin = new Admin('alguem', 'a@v.com', '2000/01/01')
-/* console.log(novoAdmin)
-console.log(novoAdmin.exibirInfos()) */
+//const novoAdmin = new Admin('alguem', 'a@v.com', '2000/01/01')
+//console.log(novoAdmin.nome)
+/* console.log(novoAdmin.exibirInfos()) 
 
-/* console.log(novoAdmin.criarCurso('JS', 20))
+console.log(novoAdmin.criarCurso('JS', 20)) */
 
- */
